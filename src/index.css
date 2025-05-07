@@ -1,0 +1,1105 @@
+/*Navbar style*/
+*{
+  margin: 0%;
+}
+body{
+  background-size: 200% 200%;
+  background-image: radial-gradient(circle, #000000, #090002, #110103, #170103, #1c0202);
+  animation: NavbarGradient 2s infinite alternate-reverse cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+.EntranceAnimation{
+  background-size: 200% 200%;
+  background-image: radial-gradient(circle, #000000, #090002, #110103, #170103, #1c0202);
+  animation: NavbarGradient 2s infinite alternate-reverse cubic-bezier(0.39, 0.575, 0.565, 1);
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  opacity: 100%;
+  top: 0px;
+  bottom: 0px;
+}
+
+.EntranceAnimation :nth-child(1){
+  margin: auto;
+  max-width: 100%;
+  padding: 5px;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  top: 0px;
+}
+.Navbar{
+  position: fixed;
+  z-index: 200;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-size: 200% 200%;
+  background-image: radial-gradient(circle, #000000, #090002, #110103, #170103, #1c0202);
+  animation: NavbarGradient 2s infinite alternate-reverse cubic-bezier(0.39, 0.575, 0.565, 1);
+ color: white;
+ 
+  
+}
+@keyframes NavbarGradient {
+  0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+}
+.logo{
+  margin-left: 40px;  
+}
+.logo img{
+  width: 150px;
+  cursor: pointer;
+}
+.Menu ul{
+  padding: 0%;
+  display: flex;
+  list-style: none;
+  gap: 35px;
+  justify-content: space-between;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: transparent;
+}
+.Menu ul li{
+  cursor: pointer;
+}
+.Lenguages{
+  display: flex;
+  gap: 10px;
+  margin-right: 40px;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  color: red;
+}
+.Lenguages img{
+  width: 30px;
+  height: 30px;
+
+}
+.Lenges{
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  cursor: pointer;
+}
+.Lengen{
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  cursor: pointer;
+}
+.hamblogo{
+  display: none;
+}
+.closeicon{
+  display: none;
+}
+
+/* Navbar Resposive Design*/
+@media screen and (max-width: 1030px){
+  .logo{
+      margin-left: 0px;
+  }
+  .Lenguages{
+      margin-right: 0px;
+  }
+  .Menu ul{
+      font-size: 13px;
+  }
+  .logo img{
+      width: 120px;
+  }
+  .Lenguages img{
+      width: 16px;
+      height: 16px;
+  }
+}
+@media screen and (max-width: 846px){
+  *{
+      margin: 0px;
+  }
+  .Navbar{
+      position: fixed;
+      margin: 0%;
+      height: 60px;
+      z-index: 100;
+  }
+  .MenuAdd ul{
+      margin: 0px;
+      padding: 0%;
+      flex-direction: column;
+      position: absolute;
+      justify-content: space-around;
+      text-align: center;
+      font-size: 23px;
+      top: 0px;
+      left: 0px;
+      bottom: 0px;
+      background-image: radial-gradient(circle, #000000, #090002, #110103, #170103, #1c0202);
+      animation: NavbarGradient 3s infinite alternate-reverse ease-in-out;
+      width: 100%;
+      background-size: 200% 200%;
+      transform: scaleY(1);
+      height: 100vh;
+      transition: all 2s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  .MenuRemove ul{
+      opacity: 0;
+      transform: scaleY(0);
+      height: 0;
+      overflow: hidden;
+      transition: all 0.6s ease-in-out;
+  }
+  .Lenguages{
+      position: absolute;
+      right: 60px;
+      z-index: -1;
+  }
+  .Lenguages img{
+      width: 20px;
+      height: 20px;
+  }
+  .logo img{
+      width: 140px;
+      position: absolute;
+      margin: auto;
+      top: 0%;
+      bottom: 0%;
+      left: 30px;
+  }
+  .hamblogo{
+      display: block;
+      position: absolute;
+      width: 35px;
+      right: 7px;
+      top: 0px;
+      bottom: 0px;
+      align-items: center;
+      margin: auto;
+  }
+  .closeicon{
+      display: block;
+      position: absolute;
+      width: 35px;
+      right: 7px;
+      top: 0px;
+      bottom: 0px;
+      align-items: center;
+      margin: auto;
+  }
+}
+
+
+
+
+/*Hero Styles*/
+.HeroGeneral{
+  margin: auto;
+  color: white;
+  background-size: 200% 200%;
+  background-image: radial-gradient(circle, #000000, #090002, #110103, #170103, #1c0202);
+  animation: NavbarGradient 2s infinite alternate-reverse cubic-bezier(0.39, 0.575, 0.565, 1);
+  display: flex;
+  justify-content: space-between;
+  padding-top: 60px;
+  height: 91vh;
+  position: relative;
+  mask-image: linear-gradient(black 10%, transparent);
+}
+.LeftContent{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 2px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: auto
+}
+.LeftContent > :nth-child(2){
+  font-size: 63px;
+}
+.LeftContent span{
+  animation: SpanColour 3s infinite 4s alternate-reverse cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+@keyframes SpanColour {
+  0%{
+      color: blue;
+  }
+  50%{
+      color: green;
+  }
+  100%{
+      color: red;
+  }
+}
+.LeftContent > :nth-child(3){
+  font-size: 20px;
+}
+.LeftContent > :nth-child(4){
+  font-size: 20px;
+}
+.RightContent{
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 20;
+  mask-image: linear-gradient(black 10%, transparent);
+  width: 50%;
+}
+.IntoRadious > :nth-child(1){
+  width: 100%;
+  mask-image: linear-gradient(black 80%, transparent);
+  animation: ScaleAnimation 6s infinite alternate 3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+@keyframes ScaleAnimation {
+  0%{
+      transform: translateY(10px);
+  }
+  100%{
+      transform: translateY(50px);
+  }
+  
+}
+
+.IntoRadious > :nth-child(2){
+  width: 200px;
+  position: absolute;
+  left: 0px;
+  top: 90px;
+  z-index: -1;
+  animation: ScaleAnimation 8s infinite alternate-reverse 4s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  
+
+}
+.IntoRadious > :nth-child(3){
+  max-width: 200px;
+  position: absolute;
+  top: 60px;
+  right: 0px;
+  z-index: -1;
+  animation: ScaleAnimation 8s infinite alternate-reverse 4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+}
+.RightContent > :nth-child(1){
+  border: 10px blue dotted;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  position: absolute;
+  z-index: -1;
+  animation: SpinAnimation 3s infinite alternate cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  
+}
+@keyframes SpinAnimation {
+  0%{
+      opacity: 0%;
+      border: 10px blue dotted;
+  }
+  50%{
+      border: 10px blue dotted;
+  }
+  100%{
+      opacity: 100%;
+      border: 10px red dotted;
+  }
+  
+}
+
+/*Pc RESPONSIVE*/
+@media screen and (min-width: 835px) and (max-width: 950px){
+  .LeftContent >:nth-child(2){
+      font-size: 60px;
+  }
+}
+
+/*Tablets Responsive*/
+@media screen and (min-width: 768px) and (max-width: 834px){
+  .HeroGeneral{
+      height: 40%;
+      mask-image: linear-gradient(black 80%, transparent);
+  }
+  .LeftContent{
+      background-color: transparent;
+  }
+  .LeftContent > :nth-child(2){
+      font-size: 40px;
+  }
+  .RightContent{
+      height: 40%;
+  }
+  .RightContent > :nth-child(1){
+      border: 10px blue dashed;
+      width: 100%;
+      height: 100%;
+      border-radius: 100%;
+      position: absolute;
+      z-index: -1;
+  }
+}
+
+/*Tablets Responsive (Ipad pro)*/
+@media screen and (min-height: 1024px) and (max-height: 1366px) {
+  .HeroGeneral{
+      height: 50%;
+      mask-image: linear-gradient(black 90%, transparent);
+  }
+  .LeftContent{
+      background-color: transparent;
+      padding-left: 3px;
+      padding-bottom: 20px;
+  }
+  .LeftContent > :nth-child(2){
+      font-size: 40px;
+  }
+  .RightContent{
+      height: 40%;
+  }
+  .RightContent > :nth-child(1){
+      border: 10px blue dashed;
+      width: 100%;
+      height: 100%;
+      border-radius: 100%;
+      position: absolute;
+      z-index: -1;
+  }
+}
+
+/*Intermedate Responsive*/
+@media screen and (min-width: 200px) and (max-width: 767px) and (max-height: 641px) {
+  .HeroGeneral{
+      margin: auto;
+      align-items: center;
+      mask-image: linear-gradient(black 40%, transparent);
+  }
+  .LeftContent{
+     background-color: transparent;
+     width: 70%;
+     padding-left: 20px;
+     position: absolute;
+     bottom: 20%;
+     gap: 20px;
+  }
+  .LeftContent > :nth-child(2){
+      font-size: 40px;
+  }
+  .RightContent{
+      position: absolute;
+      right: 5px;
+      width: 75%;
+      opacity: 40%;
+      background-color: transparent;
+  }
+  .RightContent > :nth-child(1){
+      height: 100%;
+  }
+}
+
+/*Smartphones Responsive*/
+@media screen and (min-width: 100px) and (max-width: 547px) and (min-height: 500px) and (max-height: 1000px){
+  .HeroGeneral{
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      max-width: 100%;
+  }
+  .RightContent{
+      width: 100%;
+      position: absolute;
+      background-color: transparent;
+      opacity: 40%;
+      top: 10%;
+  }
+  .RightContent > :nth-child(1){
+      height: 100%;
+  }
+  .LeftContent{
+      background-color: transparent;
+      width: 88%;
+      gap: 10px;
+      align-items: baseline;
+      gap: 20px;
+  }
+  .LeftContent > :nth-child(2){
+      font-size: 55px;
+  }
+  .LeftContent > :nth-child(1){
+      font-size: 15px;
+  }
+  .LeftContent > :nth-child(3){
+      font-size: 13px;
+  }
+  .LeftContent > :nth-child(4){
+      font-size: 13px;
+  }
+}
+
+
+/*Services Section*/
+.Services{
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+}
+.ServicesGeneral{
+  height: 100vh;
+  overflow: hidden;
+  z-index: 1;
+  animation: NavbarGradient 2s infinite alternate-reverse cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation: NavbarGradient 2s infinite alternate-reverse cubic-bezier(0.39, 0.575, 0.565, 1);
+  position: relative;
+  mask-image: linear-gradient(black 10%, transparent);
+}
+
+.BackgroudServices{
+  width: 100%;
+  position: relative;
+  right: 100px;
+  top: -100px;
+  background-attachment: fixed;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  z-index: 1;
+  mask-image: linear-gradient(black 10%, transparent);
+}
+.ServicesGeneral > :nth-child(2){
+  font-size: 210px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* centra completamente */
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  z-index: -1;
+}
+.GeneralCard{
+  overflow: hidden;
+  max-width: 100%;
+  height: 150vh;
+  
+}
+.cards{
+  display: flex;
+  justify-content: space-around;
+  transition: transform 0.5s ease;
+  width: 100%;
+  gap: 30px;
+  position: relative;
+  right: 900px;
+}
+.card{
+  width: 400px;
+  height: 530px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: 3px white solid;
+  border-radius: 50px;
+}
+.card video{
+  width: 100%;
+  height: 530px;
+  opacity: 30%;
+  border: 3px white solid;
+  border-radius: 50px;
+  object-fit: cover;
+  mask-image: linear-gradient(rgb(45, 2, 0) 10%, transparent);
+  z-index: 1;
+
+}
+.textcard{
+  position: absolute;
+  bottom: 0%;
+  top: 0%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  z-index: 1;
+}
+.textcard >:nth-child(1){
+  padding-top: 30px;
+  color: red;
+  text-transform: uppercase;
+}
+.textcard span{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 20px;
+  padding-bottom: 10px;
+}
+.textcard span p{
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 20px;
+}
+.textcard a {
+  background-size: 200% 200%;
+  background-image: radial-gradient(circle, #000000, #090002, #110103, #170103, #1c0202);
+  animation: NavbarGradient 2s infinite alternate-reverse cubic-bezier(0.39, 0.575, 0.565, 1);
+  border: none;
+  width: 150px;
+  padding: 20px;
+  border: 1px black solid;
+  border-radius: 40px;
+  margin: auto;
+  z-index: 100;
+}
+.textcard a button{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.cardtwo{
+  position: relative;
+  top: 200px;
+}
+.cardone{
+  position: relative;
+  top: 400px;
+}
+
+/*Pc RESPONSIVE*/
+@media screen and (min-width: 835px) and (max-width: 950px){
+  .GeneralCard{
+      height: 250vh;
+  }
+  .cards{
+      width: 160%;  
+      left: -1300px;
+      gap: 10px;
+  }
+  .card{
+      width: 500px;
+  }
+  .cardtwo{
+      position: relative;
+      top: 400px;
+  }
+  .cardone{
+      position: relative;
+      top: 800px;
+  }
+}
+
+
+/*Tablets Responsive*/
+@media screen and (min-width: 768px) and (max-width: 834px) {
+  .ServicesGeneral > :nth-child(1){
+      width: 200%;
+      height: auto;
+      left: -300px;
+  }
+  .ServicesGeneral > :nth-child(2){
+      font-size: 180px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); /* centra completamente */
+      width: 100%;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      z-index: -1;
+  }
+  .cards{
+      width: 150%;  
+      left: -1000px;
+  }
+  .card{
+      width: 500px;
+  }
+  
+}
+
+/*Tablets Responsive (Ipad pro)*/
+@media screen and (min-height: 1024px) and (max-height: 1366px) {
+  .ServicesGeneral > :nth-child(1){
+      width: 200%;
+      height: auto;
+      left: -300px;
+  }
+  .cards{
+      width: 150%;  
+      left: -1300px;
+  }
+  .GeneralCard{
+      height: 94vh;
+  }
+}
+
+@media screen and (min-width: 1010px) and (max-width: 1024px) and (min-height: 200px) and (max-height: 600px){
+  .GeneralCard{
+      height: 170vh;
+  }
+}
+
+/*Intermedate Responsive*/
+@media screen and (min-width: 547px) and (max-width: 767px) and (max-height: 641px) {
+  .ServicesGeneral > :nth-child(1){
+      width: 180%;
+      height: auto;
+      left: -300px;
+  }
+  .ServicesGeneral > :nth-child(2){
+      font-size: 130px;
+  }
+  .GeneralCard{
+      height: 250vh;
+  }
+  .cardone{
+      top: 1000px;
+  }
+  .cardtwo{
+      top: 500px;
+  }
+  .cards{
+      width: 220%;  
+      left: -1630px;
+  }
+}
+
+/* Previous Smartphones Responsive*/
+@media screen and (min-width: 200px) and (max-width: 546px){
+  .GeneralCard{
+      padding-bottom: 360px;
+  }
+}
+
+
+/*Smartphones Responsive*/
+@media screen and (min-width: 100px) and (max-width: 547px) and (min-height: 500px) and (max-height: 1000px){
+  .ServicesGeneral > :nth-child(1){
+      width: 200%;
+      height: auto;
+      left: -300px;
+  }
+  .ServicesGeneral > :nth-child(2){
+      font-size: 80px;
+  }
+  .GeneralCard{
+      height: 210vh;
+  }
+  .cardone{
+      top: 1000px;
+  }
+  .cardtwo{
+      top: 500px;
+  }
+  .cardthree{
+      top: 0px;
+  }
+  .cards{
+      width: 300%;  
+      left: -1780px;
+  }
+
+}
+
+/*Smartphones Responsive(Smalest Iphone SE)*/
+@media screen and (device-width: 375px) and (device-height: 667px){
+  .GeneralCard{
+      height: 250vh;
+  }
+  .cards{
+      width: 300%;  
+      left: -1600px;
+  }
+  .cardone{
+      top: 1000px;
+  }
+  .cardtwo{
+      top: 500px;
+  }
+}
+
+/*Review Styles*/
+.ReviewTitle{
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  
+}
+.TitleTextContainer{
+  height: 100vh;
+  overflow: hidden;
+  z-index: 1;
+  animation: NavbarGradient 2s infinite alternate-reverse cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation: NavbarGradient 2s infinite alternate-reverse cubic-bezier(0.39, 0.575, 0.565, 1);
+  position: relative;
+  mask-image: linear-gradient(black 10%, transparent);
+}
+.TitleTextContainer span{
+  animation: SpanColour 7s infinite 4s alternate-reverse cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.BackgroudTitleReview{
+  width: 100%;
+  position: relative;
+  top: -200px;
+  background-attachment: fixed;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  z-index: 1;
+  mask-image: linear-gradient(black 10%, transparent);
+  object-fit: cover;
+  opacity: 60%;
+}
+.TitleTextContainer > :nth-child(2){
+  font-size: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* centra completamente */
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  z-index: -1;
+}
+.ReviewsSlider{
+  display: flex;
+  cursor:e-resize;
+  max-width: 100%;
+  padding: 30px;
+  mask-image: linear-gradient(black 60%, transparent);
+}
+.reviewCard{
+  width: 355px;
+  height: 500px;
+  background-size: 200% 200%;
+  background-image: radial-gradient(circle, rgba(3, 57, 236, 1), 
+  rgba(0, 0, 0, 1), 
+  rgba(3, 0, 0, 0.8), 
+  rgba(0, 0, 0, 0.6), 
+  rgba(184, 189, 35, 0.1));
+  animation: ClientGradient 6s infinite alternate cubic-bezier(0.645, 0.045, 0.355, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 40px;
+  border: 2px white solid;
+  mask-image: linear-gradient(black 80%, transparent);
+  margin: auto;
+}
+@keyframes ClientGradient {
+  0% {
+      background-position: 0% 50% 75%;
+  }
+  100%{
+      background-position: 80% 200%;
+  }
+  
+}
+.reviewCard >:nth-child(1){
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 10px;
+  align-items: center;
+  margin: auto;
+  gap: 6px;
+  width: 100%;
+  height: 50%;
+}
+.reviewCard >:nth-child(2){
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15   px;
+  padding: 40px;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.swiper-pagination-bullet {
+  background-color: rgb(56, 66, 62) !important;
+  opacity: 1 !important;
+}
+.swiper-pagination-bullet-active {
+  background-color: rgb(255, 0, 0) !important;
+  opacity: 1 !important;
+}
+.swiper-button-next{
+  color: rgb(255, 0, 0) !important;
+  opacity: 1 !important;
+}
+.swiper-button-prev{
+  color: rgb(255, 0, 0) !important;
+  opacity: 1 !important;
+}
+.reviewCard img{
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 2px rgb(184, 255, 6) dotted;
+  border-radius: 100%;
+  animation: BorderColours 3s infinite 4s alternate-reverse cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+@keyframes BorderColours {
+  0%{
+      border: 2px rgb(184, 255, 6) dotted;
+  }
+  25%{
+      border: 2px rgb(251, 17, 0) dotted;
+  }
+  75%{
+      border: 2px rgb(47, 10, 195) dotted;
+  }
+  100%{
+      border: 2px rgb(238, 6, 255) dotted;
+  }
+}
+.profileinformation >:nth-child(2), .profileinformation >:nth-child(3){
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: right;
+}
+
+/*Tablets Responsive*/
+@media screen and (min-width: 768px) and (max-width: 900px) and (min-height: 1024px) and (max-height: 1180px) and (orientation: portrait){
+  
+  .TitleTextContainer > :nth-child(2){
+      font-size: 130px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); 
+      width: 100%;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      z-index: -1;
+  }
+  .reviewCard{
+      max-width: 300px;
+      
+  } 
+  .reviewCard img{
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      margin: auto;
+
+  }
+  .reviewCard >:nth-child(2){
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      padding: 30px;
+  }
+}
+
+/*Tablets Responsive (Ipad pro)*/
+@media screen and (min-height: 1024px) and (max-height: 1366px) {
+  .reviewCard{
+      width: 400px;
+  }
+}
+
+/*Intermedate Responsive*/
+@media screen and (min-width: 547px) and (max-width: 767px) and (max-height: 641px) {
+  .TitleTextContainer > :nth-child(2){
+      font-size: 140px;
+  }
+  .BackgroudTitleReview{
+      width: 100%;
+      position: relative;
+      top: -400px;
+
+  }
+}
+
+/*Smartphones Responsive*/
+@media screen and (min-width: 100px) and (max-width: 547px) and (min-height: 500px) and (max-height: 1000px){
+  .TitleTextContainer > :nth-child(2){
+      font-size: 50px;
+  }
+  .TitleTextContainer > :nth-child(2){
+      top: 25%;
+      left: 0%;
+      right: 0%;
+      transform: translate(0%); 
+  }
+  .BackgroudTitleReview{
+      top: -600px;
+  }
+  .ReviewsSlider{
+      padding: 0%;
+  }
+  .reviewCard{
+      width: 90%;
+      height: 600px;
+      margin: auto;
+      gap: 0px;
+  }
+  .reviewCard >:nth-child(1){
+      height: 50%;
+  }
+  .reviewCard >:nth-child(2){
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 50%;
+      text-align: center;
+      margin: auto;
+      padding-left: 10px;
+      padding-right: 10px;
+      align-items: center;
+      font-size: 20px;
+  }
+  .reviewCard img{
+      position: relative;
+  }
+}
+
+/*PROJECT SECTION STYLES*/
+
+.ProjectTitle{
+  overflow: hidden;
+  width: 100%;
+  height: 150vh;
+  z-index: -10;
+}
+.ProjectTitleContainer{
+  height: 150vh;
+  overflow: hidden;
+  z-index: 1;
+  animation: NavbarGradient 2s infinite alternate-reverse cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation: NavbarGradient 2s infinite alternate-reverse cubic-bezier(0.39, 0.575, 0.565, 1);
+  position: relative;
+  mask-image: linear-gradient(black 10%, transparent);
+}
+.ProjectTitleContainer span{
+  animation: SpanColour 7s infinite 4s alternate-reverse cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.BackgroudTitleProject{
+  width: 100%;
+  position: relative;
+  top: -1300px;
+  background-attachment: fixed;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  z-index: -1;
+  mask-image: linear-gradient(black 10%, transparent);
+  object-fit: cover;
+  opacity: 50%;
+
+}
+.ProjectTitleContainer > :nth-child(2){
+  font-size: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* centra completamente */
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  z-index: -1;
+}
+
+.ProjectSlider{
+  display: flex;
+  cursor:e-resize;
+  max-width: 100%;
+  padding: 30px;
+  mask-image: linear-gradient(black 60%, transparent);
+}
+.projectCard{
+  width: 400px;
+  height: 350px;
+  background-size: 200% 200%;
+  background-image: radial-gradient(circle, rgba(3, 57, 236, 1), 
+  rgba(0, 0, 0, 1), 
+  rgba(3, 0, 0, 0.8), 
+  rgba(0, 0, 0, 0.6), 
+  rgba(184, 189, 35, 0.1));
+  animation: ClientGradient 6s infinite alternate cubic-bezier(0.645, 0.045, 0.355, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 40px;
+  border: 2px white solid;
+  mask-image: linear-gradient(black 80%, transparent);
+  margin: auto;
+}
+.projectCard img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/*Tablets Responsive*/
+@media screen and (min-width: 768px) and (max-width: 900px) and (min-height: 1024px) and (max-height: 1180px) and (orientation: portrait){
+  .ProjectTitleContainer >:nth-child(2){
+      font-size: 180px;
+  }
+  .projectCard{
+      max-width: 300px;
+      
+  } 
+  .projectCard img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      margin: auto;
+
+  }
+  .projectCard >:nth-child(2){
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      padding: 30px;
+  }
+
+}
+/*Tablets Responsive (Ipad pro)*/
+@media screen and (min-height: 1181px) and (max-height: 1366px) {
+  .ProjectTitleContainer > :nth-child(2){
+      font-size: 240px;
+  }
+  .projectCard img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      margin: auto;
+
+  }
+}
+
+/*Intermedate Responsive*/
+@media screen and (min-width: 547px) and (max-width: 767px) and (max-height: 641px) {
+  .ProjectTitleContainer > :nth-child(2){
+      font-size: 140px;
+  }
+}
+
+/*Smartphones Responsive*/
+@media screen and (min-width: 100px) and (max-width: 547px) and (min-height: 500px) and (max-height: 1000px){
+  .ProjectTitleContainer > :nth-child(2){
+      font-size: 80px;
+      top: 25%;
+      left: 0%;
+      right: 0%;
+      transform: translate(0%); 
+  }
+  .ProjectSlider{
+      padding: 0%;
+  }
+  .projectCard{
+      width: 90%;
+      height: 300px;
+      margin: auto;
+      gap: 0px;
+      filter: brightness(0.4);
+  }
+}
