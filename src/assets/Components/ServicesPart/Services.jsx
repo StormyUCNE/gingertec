@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { useLanguage } from "/src/Languages/LanguageContext.jsx";
 import HeadPhones from "/src/Imgs/ServicesContents/Img/HeadPhones.png"
-import WebDesign from "/src/Imgs/ServicesContents/Videos/WebDesignBack.mp4"
-import GraphicDesign from "/src/Imgs/ServicesContents/Videos/GraphicDesignBack.mp4"
-import Consulting from "/src/Imgs/ServicesContents/Videos/ConsultingBack.mp4"
+import WebDesign from "/src/Imgs/ServicesContents/Img/WebDesignImg.jpg"
+import GraphicDesign from "/src/Imgs/ServicesContents/Img/GraphicDesignImg.jpg"
+import Consulting from "/src/Imgs/ServicesContents/Img/ConsultingImg.jpg"
 import { motion } from 'framer-motion';
 function Services() {
     const {texts} = useLanguage();
@@ -15,7 +15,8 @@ function Services() {
     }
 
     useEffect(()=>{
-        window.addEventListener("scroll", ScrollFunction)
+        window.addEventListener("scroll", ScrollFunction);
+        return () => window.removeEventListener("scroll", ScrollFunction); 
     },[])
   return (
     <>
@@ -29,7 +30,7 @@ function Services() {
       <section className='GeneralCard'>
           <div className='cards' style={{transform: `translateX(${scroll * 0.7}px)`, transition: 'transform 0.2s ease-out'}} >
             <div className='card cardone'>
-                <video src={WebDesign} autoPlay loop muted></video>
+                <img src={WebDesign} alt={WebDesign}/>
                 <div className='textcard'>
                   <h4>{texts.Services.card1text1}</h4>
                   <span>
@@ -42,7 +43,7 @@ function Services() {
                 </div>
             </div>
             <div className='card cardtwo'>
-                <video src={GraphicDesign} autoPlay loop muted></video>
+                <img src={GraphicDesign} alt={GraphicDesign} />
                 <div className='textcard'>
                   <h4>{texts.Services.card2text1}</h4>
                   <span>
@@ -55,7 +56,7 @@ function Services() {
                 </div>
             </div>
             <div className='card cardthree'>
-                <video src={Consulting} autoPlay loop muted></video>
+                <img src={Consulting} alt={Consulting}/>
                 <div className='textcard'>
                   <h4>{texts.Services.card3text1}</h4>
                   <span>

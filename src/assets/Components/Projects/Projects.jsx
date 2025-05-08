@@ -17,6 +17,7 @@ function Projects() {
     }
     useEffect(()=>{
         window.addEventListener("scroll", ScrollEffect);
+        return () => window.removeEventListener("scroll", ScrollEffect);
     },[])
   return (
     <>
