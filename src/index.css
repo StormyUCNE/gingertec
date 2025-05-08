@@ -487,7 +487,6 @@ body{
   overflow: hidden;
   max-width: 100%;
   height: 150vh;
-  
 }
 .cards{
   display: flex;
@@ -558,11 +557,14 @@ body{
   border-radius: 40px;
   margin: auto;
   z-index: 100;
+  
 }
 .textcard a button{
   background-color: transparent;
   border: none;
   cursor: pointer;
+  color: white;
+  font-size: 18px;
 }
 .cardtwo{
   position: relative;
@@ -773,6 +775,7 @@ body{
   display: flex;
   cursor:e-resize;
   max-width: 100%;
+  color: white;
   padding: 30px;
   mask-image: linear-gradient(black 60%, transparent);
 }
@@ -846,6 +849,9 @@ body{
   border: 2px rgb(184, 255, 6) dotted;
   border-radius: 100%;
   animation: BorderColours 3s infinite 4s alternate-reverse cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.textcard span{
+  color: white;
 }
 @keyframes BorderColours {
   0%{
